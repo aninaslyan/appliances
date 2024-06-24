@@ -13,8 +13,15 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/Arm Hmk's Bebas Neue.TTF");
+}
+
 body {
-    margin: 0
+    margin: 0;
+    font-family: myFirstFont, sans-serif !important;
+    background-color: #000000;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
@@ -179,7 +186,6 @@ textarea {
 
 /* End extract */
 html, body {
-    font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5
 }
@@ -519,15 +525,9 @@ a {
     float: left
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url("../fonts/Arm Hmk's Bebas Neue.TTF");
-}
-
 .w3-bar .w3-button {
     white-space: normal;
     word-spacing: 5px;
-    font-family: myFirstFont;
     font-size: 20px;
 }
 
@@ -999,7 +999,6 @@ a {
 }
 
 .w3-code, .w3-codespan {
-    font-family: Consolas, "courier new";
     font-size: 16px
 }
 
@@ -1774,4 +1773,74 @@ a {
 .icons i {
     padding: 10px;
     cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(180deg, #000000 0%, #7a1416 60%, #E51F29 100%);
+    padding: 20px 0 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 184px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer-icons .icon {
+    text-align: center;
+}
+
+.footer-icons .icon i {
+    font-size: 30px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.footer-icons .icon p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer-icons .icon img {
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    font-size: 32px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
 }
