@@ -857,7 +857,7 @@ a {
 .w3-top, .w3-bottom {
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .w3-top {
@@ -1830,6 +1830,7 @@ a {
 }
 
 .grid-item {
+    overflow: hidden; /* Ensure the overlay doesn't go beyond the item */
     position: relative;
 }
 
@@ -1886,11 +1887,44 @@ a {
     grid-row: 2 / 4;
 }
 
+/* Class to trigger the animation */
+.grid-item img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.grid-item .overlay-hover {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start the overlay off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background-color: #E51F29; /* Red background color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 48px;
+    transition: left 0.6s ease-out; /* Slide in from the left */
+    z-index: 1;
+}
+
+.grid-item:hover .overlay-hover {
+    left: 0; /* Bring the overlay in on hover */
+}
+
+.overlay-hover p {
+    color: white;
+    font-size: 36px;
+    width: 400px;
+}
+
 .overlay {
     background-color: white;
     color: black;
     padding: 10px;
-    z-index: 1;
+    z-index: 2;
     width: 355px;
 }
 
