@@ -1775,6 +1775,44 @@ a {
     cursor: pointer;
 }
 
+.counter-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 20vh;
+}
+
+.counter-container {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+}
+
+.counter-container p {
+    font-size: 37px;
+    margin: 15px;
+    opacity: 0; /* Initially hide the element */
+    animation: fadeIn 2s forwards; /* Apply the animation */
+}
+
+.counter {
+    font-size: 4em;
+    background-color: #E51F29;
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/*Footer*/
 footer {
     background: linear-gradient(180deg, #000000 0%, #7a1416 60%, #E51F29 100%);
     padding: 20px 0 10px;
