@@ -1960,12 +1960,13 @@ a {
     width: 80%;
 }
 .about-us-container .section img {
-    width: 30vw;
+    width: 35vw;
     height: auto;
 }
 .about-us-container .section p {
     margin: 10px 0;
     text-align: justify;
+    font-size: 2.3rem;
 }
 .highlight {
     color: #E51F29;
