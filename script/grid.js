@@ -1,26 +1,20 @@
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.slide-in');
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('.grid-item img');
 
-    const isInViewport = (element) => {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    };
-
-    const animateImages = () => {
+    function checkVisibility() {
         images.forEach(image => {
-            if (isInViewport(image)) {
+            const rect = image.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
                 image.classList.add('visible');
+            } else {
+                image.classList.remove('visible');
             }
         });
-    };
+    }
 
-    window.addEventListener('scroll', animateImages);
-    window.addEventListener('resize', animateImages); // Also check on resize
-    animateImages(); // Initial check
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+
+    // Initial check
+    checkVisibility();
 });
