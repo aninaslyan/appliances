@@ -315,7 +315,7 @@ a {
 .w3-btn, .w3-button {
     border: none;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 0;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -422,29 +422,21 @@ a {
 }
 
 .w3-dropdown-hover:hover .w3-dropdown-content {
-    display: block
-}
-
-.w3-dropdown-hover:first-child, .w3-dropdown-click:hover {
-    background-color: #ccc;
-    color: #000
-}
-
-.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child {
-    background-color: #ccc;
-    color: #000
+    display: block;
 }
 
 .w3-dropdown-content {
-    cursor: auto;
-    color: #000;
-    background-color: #fff;
-    display: none;
+    background-color: black;
+    border-radius: 0 0 35px 36px;
+    color: white;
     position: absolute;
-    min-width: 160px;
-    margin: 0;
-    padding: 0;
-    z-index: 1
+    display: none;
+    top: 5rem;
+}
+
+.w3-dropdown-content a:last-child {
+    border-radius: 0 0 10px 10px;
+    display: block;
 }
 
 .w3-check, .w3-radio {
@@ -515,7 +507,7 @@ a {
 }
 
 .w3-bar .w3-bar-item {
-    padding: 8px 16px;
+    margin: 8px 20px;
     float: left;
     width: auto;
     border: none;
@@ -535,14 +527,13 @@ a {
 }
 
 .w3-bar-block .w3-bar-item {
-    width: 100%;
-    display: block;
-    padding: 8px 16px;
     text-align: left;
-    border: none;
-    white-space: normal;
+    /* white-space: normal; */
     float: none;
-    outline: 0
+    /* outline: 0; */
+    border-top: 0.5px solid #FFFFFF;
+    margin: 0;
+    padding: 12px;
 }
 
 .w3-bar-block.w3-center .w3-bar-item {
@@ -1370,11 +1361,6 @@ a {
     float: right !important
 }
 
-.w3-button:hover {
-    color: #000 !important;
-    background-color: #ccc !important
-}
-
 .w3-transparent, .w3-hover-none:hover {
     background-color: transparent !important
 }
@@ -1777,6 +1763,32 @@ a {
     padding: 10px;
     cursor: pointer;
 }
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 10px 15px;
+}
+
+.menu-item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+.menu-item:hover:after {
+    width: 100%;
+    left: 0;
+}
+
 
 .counter-main-container {
     display: flex;
