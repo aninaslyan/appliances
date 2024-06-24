@@ -28,6 +28,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: block
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 summary {
     display: list-item
 }
@@ -235,7 +239,6 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
     margin: 10px 0
 }
@@ -1933,6 +1936,36 @@ a {
     transform: translateX(0);
 }
 
+.about-us-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px;
+}
+.about-us-container .section {
+    margin: 20px 0;
+    width: 80%;
+}
+.about-us-container .section img {
+    width: 30vw;
+    height: auto;
+}
+.about-us-container .section p {
+    margin: 10px 0;
+    text-align: justify;
+}
+.highlight {
+    color: #E51F29;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex .text {
+    font-size: 1.5rem;
+}
 
 /*Footer*/
 footer {
