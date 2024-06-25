@@ -61,7 +61,7 @@
         <div class="icons">
             <i class="fa fa-search"></i>
             <i class="fa-solid fa-message"></i>
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user" id="user-icon"></i>
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
@@ -91,13 +91,15 @@
         </div>
 
         <div class="mySlides fade">
-            <img src="img/slideshow/slide1.png" style="width:100%">
-            <div class="text">Caption Two</div>
+            <img src="img/slideshow/slide2.png" style="width:100%;margin-left: 205px;margin-top: 40px;">
+            <div class="text"><span class="highlight">20%</span> զեղչ նշված տեսականու համար</div>
+            <div class="text" style="top: 25vh;font-size: 90px"><span class="highlight">շտապե՛ք</span></div>
         </div>
 
         <div class="mySlides fade">
             <img src="img/slideshow/slide3.png" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text"><span class="highlight">20%</span> զեղչ նշված տեսականու համար</div>
+            <div class="text" style="top: 25vh;font-size: 90px"><span class="highlight">շտապե՛ք</span></div>
         </div>
     </div>
 
@@ -234,6 +236,24 @@
     </div>
 </footer>
 
+<!-- The Modal -->
+<div id="userModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Մուտք գործել</h2>
+        <p>Մենք ձեզ կուղարկենք կոդ կամ կզանգահարենք: Ձեզ հարկավոր չէ պատասխանել զանգին: Կոդը կարող եք ստանալ էլեկտրոնային փոստով կամ SMS-ով:</p>
+        <div class="modal-content-form">
+            <input type="text" placeholder="Your Phone Number">
+            <div class="button-container">
+                <button class="submit-btn">Submit</button>
+                <button class="social-btn google">Continue with Google</button>
+                <button class="social-btn facebook">Continue with Facebook</button>
+                <button class="social-btn apple">Continue with Apple</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://kit.fontawesome.com/d67e10d48c.js" crossorigin="anonymous"></script>
 
 <script>
@@ -285,6 +305,6 @@
 <script src="script/counter.js"></script>
 <script src="script/grid.js"></script>
 <script src="script/slideshow.js"></script>
-
+<script src="script/user-modal.js"></script>
 </body>
 </html>
