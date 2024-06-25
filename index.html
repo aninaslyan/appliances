@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        body {
-            font-family: "Lato", sans-serif
-        }
-
         .mySlides {
             display: none
         }
@@ -239,11 +235,13 @@
 <!-- The Modal -->
 <div id="userModal" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Մուտք գործել</h2>
-        <p>Մենք ձեզ կուղարկենք կոդ կամ կզանգահարենք: Ձեզ հարկավոր չէ պատասխանել զանգին: Կոդը կարող եք ստանալ էլեկտրոնային փոստով կամ SMS-ով:</p>
+        <div class="modal-header flex">
+            <p>Մուտք գործել</p>
+            <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <p class="bla">Մենք ձեզ կուղարկենք կոդ կամ կզանգահարենք: Ձեզ հարկավոր չէ պատասխանել զանգին: Կոդը կարող եք ստանալ էլեկտրոնային փոստով կամ SMS-ով</p>
         <div class="modal-content-form">
-            <input type="text" placeholder="Your Phone Number">
+            <img src="img/input.png" alt="">
             <div class="button-container">
                 <button class="submit-btn">Submit</button>
                 <button class="social-btn google">Continue with Google</button>

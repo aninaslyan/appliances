@@ -2141,11 +2141,35 @@ footer {
     border-radius: 40px;
 }
 
+.modal-header {
+    align-items: center;
+}
+
+.modal-header p {
+    font-size: 32px;
+    margin: 0;
+}
+
+.bla {
+    font-size: 20px;
+    text-align: center;
+    width: 335px;
+    margin: 30px auto;
+}
+
+
+.modal-content-form {
+    margin: 0 auto;
+    width: 342px;
+}
+
+.modal-content-form img {
+    width: 100%;
+}
+
 .close {
-    color: #aaa;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 45px;
 }
 
 .close:hover,
@@ -2153,9 +2177,4 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-.modal-content-form{
-    margin: 0 auto;
-    width: 320px;
 }
