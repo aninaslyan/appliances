@@ -2265,3 +2265,91 @@ footer {
     font-size: 45px;
     cursor: pointer;
 }
+
+.vl {
+    border-left: 3px solid white;
+    height: 234px;
+    position: absolute;
+    width: 10px;
+    margin: -70px;
+    margin-top: 40px;
+    text-size: 10px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 90px;
+}
+.product-card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.product-card img {
+    width: 400px;
+    border-radius: 10px;
+}
+.product-card p {
+    color: white;
+    font-size: 24px;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+.add-to-cart i {
+    margin-left: 10px;
+}
+
+/*heart*/
+.icon-button {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+.icon-button i {
+    font-size: 25px;
+    color: black;
+    transition: color 0.3s;
+    margin-top: 2px;
+    margin-right: 1px;
+}
+.icon-button:hover i {
+    color: #F40202;
+}
+
+․icon-button:active i {
+    transform: scale(0.9);
+}
+.icon-button.clicked i {
+    color: #F40202;
+}
