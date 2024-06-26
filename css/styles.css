@@ -2352,3 +2352,35 @@ footer {
 .icon-button.clicked i {
     color: #F40202;
 }
+
+.main-title {
+    color: #e60000;
+    margin-top: 20px;
+    font-size: 70px;
+}
+.subtitle {
+    font-size: 3em;
+    margin-top: 20px;
+    color: white;
+}
+.highlight {
+    color: #e60000;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+.product-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 40px;
+}
+.product-images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.mixer {
+    max-width: 67vw;
+    margin-bottom: 70px;
+}
