@@ -2097,11 +2097,6 @@ footer {
     margin: 0;
 }
 
-.footer-icons .icon img {
-    width: 35px;
-    margin-bottom: 10px;
-}
-
 .footer-social {
     text-align: center;
 }
@@ -2131,17 +2126,20 @@ footer {
     padding-top: 60px;
 }
 
+/* Modal styles */
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 471px;
-    height: 600px;
+    height: auto;
     border-radius: 40px;
 }
 
 .modal-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -2157,24 +2155,106 @@ footer {
     margin: 30px auto;
 }
 
-
 .modal-content-form {
     margin: 0 auto;
     width: 342px;
+    text-align: center;
 }
 
-.modal-content-form img {
+.modal-content-form .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.modal-content-form .eh {
+    width: 320px;
+}
+
+.modal-content-form input {
     width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.option-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.option-group input {
+    width: 22px;
+    accent-color: #000000;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.option-group p {
+    float: right;
+}
+
+.option-group .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.separator {
+    margin: 20px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 1px black;
+    background-color: white;
+    text-transform: none;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-btn img {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: black;
 }
 
 .close {
-    float: right;
     font-size: 45px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }
